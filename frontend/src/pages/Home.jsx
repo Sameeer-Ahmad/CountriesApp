@@ -34,7 +34,6 @@ const Home = () => {
       fetchHistory();
     }
   }, [user]);
-
   const handleSearch = async (currencyCode) => {
     try {
       const token = localStorage.getItem("token");
