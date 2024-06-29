@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
       const fetchUser = async () => {
         try {
           const response = await axios.get(
-            "http://localhost:5000/api/auth/me",
+            "https://countriesapp-e6oj.onrender.com/api/auth/me",
             {
               headers: { "x-auth-token": token },
             }
