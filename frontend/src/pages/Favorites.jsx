@@ -12,7 +12,7 @@ const Favorites = () => {
     const fetchFavorites = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5000/api/favorites", {
+        const response = await axios.get("https://countriesapp-e6oj.onrender.com/api/favorites", {
           headers: { "x-auth-token": token },
         });
         setFavorites(response.data);
