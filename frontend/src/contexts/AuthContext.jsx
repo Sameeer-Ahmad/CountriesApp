@@ -37,7 +37,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const register = async (username, password) => {
-    await axios.post("http://localhost:5000/api/auth/register", {
+    await axios.post("https://countriesapp-e6oj.onrender.com/api/auth/register", {
       username,
       password,
     });

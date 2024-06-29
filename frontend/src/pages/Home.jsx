@@ -66,7 +66,7 @@ const Home = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:5000/api/favorites",
+        "https://countriesapp-e6oj.onrender.com/api/favorites",
         country,
         {
           headers: { "x-auth-token": token },

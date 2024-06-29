@@ -19,7 +19,7 @@ const CountryCard = ({ country, onFavorite, isFavorite }) => {
     >
       <Image src={country.flag} alt={`${country.name} flag`} />
       <Box p="6">
-        <Box d="flex" >
+        <Box d="flex" flexWrap={"wrap"}>
           <Heading as="h3" fontSize="xl" mb="2">
             {country.name}
           </Heading>
